@@ -40,6 +40,33 @@
 .grow {
   flex-grow: 0 !important;
 }
+/* .topad {
+  padding-top: 200px;
+} */
 .font{
   font-size: 12px;
+}
+.sidebarleft {
+  padding-top: 87px !important;
+}
+.sidebar {
+  width: 300px;
+  position: fixed;
+  max-height: 90vh;
+  color: #4154f1;
+  overflow-y: scroll;
+} 
+.dashboard {
+  padding-left: 300px !important;
+}
+.text-color {
+  color: #4154f1;;
+}
+.heading{
+  color: #012970;
+}
+@media screen and (max-width:1000px) {
+  .padleft{
+    padding-left: 20px!important;
+  }
 }
