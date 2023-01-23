@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
 type navProps={
   display:string,
    padding:string,
@@ -6,9 +6,8 @@ type navProps={
   setPadding:React.Dispatch<React.SetStateAction<string>>
 }
 const Navbar = (props:navProps) => {
-   console.log(props.display);
+  // sidebar show and hide
   const displayOn=()=>{
-
     if(props.display=="block")
     {
       props.setDisplay("none");
@@ -18,7 +17,6 @@ const Navbar = (props:navProps) => {
       props.setDisplay("block");
       props.setPadding("dashboard");
     }
-
   }
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom position-fixed col-12 shadow">
@@ -33,7 +31,6 @@ const Navbar = (props:navProps) => {
             />
             <span className="ms-2 d-none d-sm-inline-block fs-4 pt-2 text-primary">NiceAdmin</span>
           </a>
-          
         </div>
         <div className="col-4 d-flex flex-row align-items-center">
          <i className="bi bi-list toggle-sidebar-btn fs-2 fw-bold" onClick={displayOn}></i>
@@ -54,10 +51,7 @@ const Navbar = (props:navProps) => {
         </div>
 
         <div className="col-xl-4 col-2  d-flex flex-row align-items-center justify-content-end">
-          
-
           <div className=" d-flex flex-row align-items-center">
-            {/* <i className="bi bi-list toggle-sidebar-btn fs-2 fw-bold"></i> */}
             <span className="fs-4 pt-3 pe-3">
               <i className="bi bi-bell position-relative">
                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill font  bg-primary">

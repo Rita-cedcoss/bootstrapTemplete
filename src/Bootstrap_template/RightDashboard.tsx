@@ -42,6 +42,7 @@ const RightDashboard = () => {
         </div>
       </div>
     </div>
+    {/* radar chart */}
     <div className='col-11 bg-white d-flex flex-column shadow mt-4 ms-3 rounded'>
       <div className='col-12 d-flex flex-row align-items-center justify-content-between p-3'>
         <label className='text-secondary fs-5'><span className='fs-5 txtCol'>Budget Report</span><span className='ms-1'>|</span><span className='ms-1'>This Month</span></label>
@@ -51,6 +52,7 @@ const RightDashboard = () => {
          <RadarChart/>
       </div>
     </div>
+    {/* Doughnut chart */}
     <div className='col-11 bg-white d-flex flex-column shadow mt-4 ms-3 rounded'>
       <div className='col-12 d-flex flex-row align-items-center justify-content-between p-3'>
         <label className='text-secondary fs-5'><span className='fs-5 txtCol'>Website Traffic</span><span className='ms-1'>|</span><span className='ms-1'>Today</span></label>

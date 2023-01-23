@@ -11,7 +11,6 @@ const Dashboard = (props:midProps) => {
         <h3>Dashboard</h3>
         <p>Home<span className='ps-2 pe-2'>/</span>Dashboard</p>
       </div>
-      {/* sales and reveneu */}
       <div className='d-flex flex-column flex-lg-row'>
         <LeftDashboard/>
         <RightDashboard/>
